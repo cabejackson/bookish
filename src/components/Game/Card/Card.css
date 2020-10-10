@@ -1,0 +1,20 @@
+img {
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards img {
+    margin: 10px;
+    max-width: 30%;
+}
+
+input {
+    padding: 5px;
+    width: 35px;
+    border: 0 solid #333;
+    border-bottom-width: 1px;
+}

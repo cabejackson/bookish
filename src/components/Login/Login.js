@@ -1,10 +1,11 @@
 import React from 'react'
 import "./Login.css";
-// import TokenService from '../../services/token-service'
-import ApiContext from "../../ApiContext";
+import TokenService from '../../services/token-services'
+import ApiContext from "../../context/ApiContext";
 import config from "../../config";
 
 
+// export default function TBRGame(props) { 
 
 export default function Login(props) {
 
@@ -19,7 +20,7 @@ export default function Login(props) {
         fetch(`${config.API_ENDPOINT}/login/`,
             {
                 method: "POST",
-                headers: { "Content-Type": "application/json" }, // should Authorization go in the headers ?
+                headers: { "Content-Type": "application/json" }, // should Authorization go in the headers ? --yes
                 //like this --> Authorization: `Schema ${user_name}:${password}`
                 body: JSON.stringify(userLoginInput)
             })
@@ -31,6 +32,11 @@ export default function Login(props) {
             //         : res.json()
             // )
             .then((data) => console.log("this is data:", data))
+            // .then(res => {
+            //     // user_name.value = ''
+            //     // password.value = ''
+            //     TokenService.saveAuthToken(res.authToken)
+            // })
 
             .catch((error) => {
                 console.log(error.message)
@@ -45,13 +51,18 @@ export default function Login(props) {
                         className="login-form-submission"
                         onSubmit={(e) => {
                             e.preventDefault();
-                            // console.log("the LOGIN form has been submitted");
+                            console.log("the LOGIN form has been submitted");
+                            console.log(context.user_name, context.password)
+
                             handleLoginSubmission(
                                 // context.value
                                 context.user_name,
-                                context.password
-
+                                context.password,
+                                // TokenService.saveAuthToken(
+                                //     TokenService.makeBasicAuthToken(context.user_name.value, context.password.value)
+                                // ),
                             );
+
                         }}
                     >
                         <h2>Login to your account below!</h2>

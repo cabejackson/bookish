@@ -1,6 +1,6 @@
 import React from 'react';
 import "./SignUp.css";
-import ApiContext from "../../ApiContext";
+import ApiContext from "../../context/ApiContext";
 import config from "../../config";
 
 export default function SignUp(props) {

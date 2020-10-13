@@ -27,13 +27,17 @@ export default function About(props) {
                     <>
                         <h1>More About the Developer<br />
                         & Goals for this App!</h1>
-                        <h2>Here's a list of card prompts:</h2>
-                        {context.prompts.map(p => (<p key={p.id}>{p.prompt_descr}</p>))}
+                        <h2>Here's a list of reading goals for example:</h2>
+                        {/* {context.prompts.map(p => (<p key={p.id}>{p.prompt_descr}</p>))} */}
+                        {context.goals.map(g => (<p key={g.id}>
+                            {
+                                // g.tbr_number,
+                                // g.timeframe,
+                                g.reading_goals
+                                // p.bnb_users_id,
 
-                        <p>I'm baby photo booth deep v tote bag artisan polaroid. </p>
-                        <p>I'm baby photo booth deep v tote bag artisan polaroid. </p>
-                        <p>I'm baby photo booth deep v tote bag artisan polaroid. </p>
-                        <p>I'm baby photo booth deep v tote bag artisan polaroid. </p>
+                            }
+                        </p>))}
 
                         <h2>Developer Bio</h2>
                         <p>I'm baby photo booth deep v tote bag artisan polaroid.<br />

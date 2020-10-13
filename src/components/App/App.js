@@ -12,7 +12,7 @@ import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import About from "../About/About";
 import Home from "../Home/Home";
-import UpdateGoalForm from "../updateGoalForm/UpdateGoalForm";
+// import UpdateGoalForm from "../SavedGoals/updateGoalForm/UpdateGoalForm";
 
 export default class App extends Component {
 	state = {
@@ -27,7 +27,9 @@ export default class App extends Component {
 		tbr_number: null,
 		// isSelected: false,
 		reading_goals: "",
-		timeframe: ""
+		timeframe: "",
+		userId: "data.userId",
+		handleLogoutClick: false
 	}
 	//  Hnadles form input changes
 	//Here's a DRY method of doing things,
@@ -43,7 +45,9 @@ export default class App extends Component {
 
 
 	handleLogoutClick = () => {
+		// this.setState(
 		TokenService.clearAuthToken()
+		// )
 	}
 
 	renderLogoutLink() {
@@ -75,37 +79,26 @@ export default class App extends Component {
 	}
 
 
+	getUserGoals = () => {
+		fetch(`${config.API_ENDPOINT}/goals/saved-reading-goals/user/${TokenService.getCredentials().userId}`,
+			{
 
-
-
-
-
-
-
-
-
-	componentDidMount = () => {
-		// console.log("api called")
-
-		Promise.all([
-			fetch(`${config.API_ENDPOINT}/goals/saved-reading-goals`), {
 				headers: {
-					// 'authorization': `basic ${TokenService.getAuthToken()}`,
-				},
+					'content-type': 'application/json',
+					'authorization': `basic ${TokenService.getCredentials().tokenKey}`,
+				}
 			}
-		])
-			.then(([goalsRes]) => {
-				if (!goalsRes.ok) return goalsRes.json().then((e) => Promise.reject(e));
+				.then((res) => res.json())
+				.then((data) => {
 
-				return Promise.all([goalsRes.json()]);
-			})
-			.then(([goals]) => {
-				console.log('this is goals in the .then', goals);
-				this.setState({ goals });
-			})
-			.catch((error) => {
-				console.error({ error });
-			});
+					console.log("this is data:", data)
+
+				})
+
+				.catch((error) => {
+					console.log(error.message)
+				})
+		)
 
 	}
 
@@ -115,6 +108,7 @@ export default class App extends Component {
 
 
 	renderMainRoutes() {
+
 		return (
 			<>
 				<Route exact path="/" component={Landing} />
@@ -125,13 +119,12 @@ export default class App extends Component {
 				<Route exact path="/sign-up" component={SignUp} />
 				<Route exact path="/about" component={About} />
 				<Route exact path="/home" component={Home} />
-				<Route exact path="/edit" component={UpdateGoalForm} />
+				{/* <Route exact path="/edit" component={UpdateGoalForm} /> */}
 			</>
 		);
 	}
 
-	updateGoal = () => { };
-	updateGoal = updateGoal => {
+	handleUpdateGoal = updateGoal => {
 		const newGoals = this.state.articles.map(art =>
 			(art.id === updateGoal.id)
 				? updateGoal
@@ -142,13 +135,26 @@ export default class App extends Component {
 		})
 	};
 
+
+	handleAddGoal = (goal) => {
+		this.setState({
+			goals: [...this.state.goals, goal]
+		});
+	};
+
+	handleDeleteGoal = (goalId) => {
+		this.setState({
+			goals: this.state.goals.filter((goal) => goal.id !== goalId)
+		});
+	};
+
 	render() {
 		const value = {
 			prompts: this.state.prompts,
 			goals: this.state.goals,
-			addGoal: this.addGoal,
-			deleteGoal: this.deleteGoal,
-			updateGoal: this.updateGoal,
+			handleAddGoal: this.handleAddGoal,
+			handleDeleteGoal: this.handleDeleteGoal,
+			handleUpdateGoal: this.handleUpdateGoal,
 			// value: this.state.value,
 			handleInputChange: this.handleInputChange,
 			first_name: this.state.first_name,
@@ -162,7 +168,9 @@ export default class App extends Component {
 			timeframe: this.state.timeframe,
 			renderLogoutLink: this.renderLogoutLink,
 			renderLoginLink: this.renderLoginLink,
-			handleLogoutClick: this.handleLogoutClick
+			handleLogoutClick: this.handleLogoutClick,
+			userId: this.userId,
+			getUserGoals: this.getUserGoals
 
 
 		}

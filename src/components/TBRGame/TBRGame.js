@@ -28,11 +28,12 @@ export default function TBRGame(props) {
         headers: {
           "Content-Type": "application/json",
           // "authorization": `basic ${TokenService.getAuthToken()}`,
+          'authorization': `bearer ${TokenService.getCredentials().tokenKey}`,
         },
         body: JSON.stringify(userGameInput)
       })
       .then((res) => res.json())
-      .then((data) => console.log("this is data:", data))
+      .then((data) => console.log("this is data:", data, bnb_users_id))
 
       .catch((error) => {
         console.log(error.message)

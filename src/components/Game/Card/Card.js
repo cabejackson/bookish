@@ -1,13 +1,14 @@
 import React, { useState } from "react";
+// import cardPrompts from "../../../utils/cardPrompts"
 
-const Card = () => {
+const Card = ({ cardId }) => {
     const [state, setState] = useState(false);
     return (
         <img
             src={
                 state
-                    ? "https://i.imgur.com/twFChyw.png"
-                    : "https://i.imgur.com/gzzMDBs.png"
+                    ? "//placehold.it/100?text=" + cardId
+                    : "//placehold.it/100?text=Back"
             }
             alt={state ? "Front" : "Back"}
             onClick={() => {

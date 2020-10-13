@@ -17,7 +17,7 @@ export default function Login(props) {
         //should an event.preventDefault() go here? -- no it goes in the return when this function is called
         const userLoginInput = { user_name, password };
 
-        fetch(`${config.API_ENDPOINT}/login/`,
+        fetch(`${config.API_ENDPOINT}/auth/login`,
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" }, // should Authorization go in the headers ? --yes
@@ -31,7 +31,18 @@ export default function Login(props) {
             //         ? res.json().then(e => Promise.reject(e))
             //         : res.json()
             // )
-            .then((data) => console.log("this is data:", data))
+            .then((data) => {
+                // console.log("this is data:", data.authToken)
+                // window.localStorage.setItem(config.TOKEN_KEY, data.authToken)
+                // console.log("this is the logged in user id", data.userId)
+
+                TokenService.saveCredentials(data.authToken, data.userId)
+
+
+
+
+            })
+
             // .then(res => {
             //     // user_name.value = ''
             //     // password.value = ''
@@ -58,9 +69,7 @@ export default function Login(props) {
                                 // context.value
                                 context.user_name,
                                 context.password,
-                                // TokenService.saveAuthToken(
-                                //     TokenService.makeBasicAuthToken(context.user_name.value, context.password.value)
-                                // ),
+
                             );
 
                         }}

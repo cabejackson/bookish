@@ -185,7 +185,7 @@ export default function TBRGame(props) {
                 type="button"
                 className="NavButton__to-saved-goals-button"
               >
-                MY SAVED GOALS!
+                MY SAVED GOALS
       </NavButton>
               </button>
             </div>

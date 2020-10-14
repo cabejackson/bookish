@@ -45,48 +45,48 @@ export default function SignUp(props) {
                                 context.password
                             );
                         }}>
-                        <h2>Fill out the form below to sign-up for an account</h2>
+                        <h2>Fill out the form below to create an account</h2>
+                        <div className="inputs___form">
+                            <label htmlFor='first_name'>First Name:</label><br />
 
-                        <label htmlFor='first_name'>First Name:</label><br />
+                            <input name='first_name'
+                                value={context.first_name}
+                                type='text'
+                                onChange={(e) => context.handleInputChange(e)}
+                                required /><br />
 
-                        <input name='first_name'
-                            value={context.first_name}
-                            type='text'
-                            onChange={(e) => context.handleInputChange(e)}
-                            required /><br />
+                            <label htmlFor='last_name'>Last Name:</label><br />
 
-                        <label htmlFor='last_name'>Last Name:</label><br />
+                            <input name='last_name'
+                                value={context.last_name}
+                                type='text'
+                                onChange={(e) => context.handleInputChange(e)}
+                                required /><br />
 
-                        <input name='last_name'
-                            value={context.last_name}
-                            type='text'
-                            onChange={(e) => context.handleInputChange(e)}
-                            required /><br />
+                            <label htmlFor='user_name'>Username:</label><br />
 
-                        <label htmlFor='user_name'>Username:</label><br />
+                            <input name='user_name'
+                                value={context.user_name}
+                                type='text'
+                                onChange={(e) => context.handleInputChange(e)}
+                                required /><br />
 
-                        <input name='user_name'
-                            value={context.user_name}
-                            type='text'
-                            onChange={(e) => context.handleInputChange(e)}
-                            required /><br />
+                            <label htmlFor='email'>Email:</label><br />
 
-                        <label htmlFor='email'>Email:</label><br />
+                            <input name='email'
+                                value={context.email}
+                                type='email'
+                                onChange={(e) => context.handleInputChange(e)}
+                                required /><br />
 
-                        <input name='email'
-                            value={context.email}
-                            type='email'
-                            onChange={(e) => context.handleInputChange(e)}
-                            required /><br />
+                            <label htmlFor='password'>Password:</label><br />
 
-                        <label htmlFor='password'>Password:</label><br />
-
-                        <input name='password'
-                            value={context.password}
-                            type='password'
-                            onChange={(e) => context.handleInputChange(e)} required /><br />
-
-                        <button id='submit-sign-up' type='submit'>CREATE ACCOUNT</button>
+                            <input name='password'
+                                value={context.password}
+                                type='password'
+                                onChange={(e) => context.handleInputChange(e)} required /><br />
+                        </div>
+                        <button id='submit-sign-up' className="submitSignUp__btn" type='submit'>Sign Up</button>
                     </form>
                 </div>)
             }}

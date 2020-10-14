@@ -69,7 +69,7 @@ export default class savedGoals extends Component {
             return <div>Loading...</div>;
         } else {
             return (
-                <ul>
+                <ul className="goal-list___ul">
                     {data && data.map(item => (
                         <Goal goal={item} key={item.id} handleDeleteGoal={this.handleDeleteGoal} />
 

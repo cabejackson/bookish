@@ -18,5 +18,51 @@ p {
 }
 
 .signup__form {
-    background-color: #4d88c8;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #F4EBE8;
+    background-image: url("./bird_horizon.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+}
+
+
+.inputs___form {
+    margin: 10px 20px 0px 5px;
+    /* width: 60px; */
+    /* border: 0 solid #333;
+    border-bottom-width: 5px;
+    border-bottom-color: #0A0908;
+    background-color: transparent; */
+
+}
+
+.submitSignUp__btn {
+    padding: 10px 16px;
+    /* border-radius: 50px; */
+    border: solid #0A0908;
+    background-color: #387b45;
+    color: #0A0908;
+    font-family: 'Markazi Text',
+        serif;
+    font-size: 20px;
+    margin: auto;
+    align-content: left;
+
+}
+
+.submitSignUp__btn a {
+    text-decoration: none;
+    color: #0A0908;
+
+
+}
+
+.submitSignUp__btn:hover {
+    background-color: #81B8D9
 }

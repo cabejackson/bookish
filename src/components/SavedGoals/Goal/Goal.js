@@ -51,31 +51,31 @@ const Goal = ({ goal, handleDeleteGoal }) => {
 
 
     return (
-        <li className="Goal">
+        <li className="Goal__li">
             {/* <span>timeframe</span> */}
 
             <span>
                 {/* <p>{goal.id}</p> */}
-                <span>id #:</span><span> {goal.id}</span>
+                {/* <span>id #:</span><span> {goal.id}</span> */}
                 <br />
-                <span className="Goal__timeframe">Timeframe:</span><span> {goal.timeframe}</span>
+                <span className="Goal__timeframe">During</span><span> {goal.timeframe},</span>
                 <br />
-                <span>TBR Goal:</span><span> {goal.tbr_number}</span>
+                <span>You plan to read</span><span> {goal.tbr_number}</span><span> books!</span>
                 <br />
-                <span>My Reading Goals:</span><span> {goal.reading_goals}</span>
+                <span className="readingDetails__span">Here's some details about your reading goals:</span><span> {goal.reading_goals}</span>
             </span>
             {/* <pre>{JSON.stringify(goal, null, 2)}</pre> */}
             <div>
                 <button
-                    className="Goal__delete"
+                    className="deleteGoal__btn"
                     type="button"
                     onClick={handleClickDelete}
 
                 >delete</button>
-                <button
+                {/* <button
                     className="btn-edit-task-btn"
                 // onClick={this.handleClickEdit}
-                >edit</button>
+                >edit</button> */}
             </div>
         </li>
     )

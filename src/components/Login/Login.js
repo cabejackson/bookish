@@ -95,7 +95,7 @@ export default function Login(props) {
                             onChange={(e) => context.handleInputChange(e)}
                             type='password'
                             required /><br />
-                        <button id='submit-login' type='submit'>LOGIN</button>
+                        <button className="login___btn" id='submit-login' type='submit'>LOGIN</button>
                     </form>
                 </div>
                 )

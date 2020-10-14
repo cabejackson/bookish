@@ -16,3 +16,71 @@ h3,
 p {
     color: black
 }
+
+/* * {
+    box-sizing: border-box;
+    font-family: 'Markazi Text', serif;
+
+} */
+
+/* body {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    background-image: url("./sunrise.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+/* main {
+    margin: 0 auto;
+} */
+
+/* h1 {
+    font-size: 3.5rem;
+    font-variant: small-caps;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 auto .33em;
+} */
+
+/* h2,
+h3 {
+    font-size: 1.6rem;
+    font-variant: small-caps;
+    margin: 0;
+} */
+
+.goal-list___ul {
+    /* padding-left: 100; */
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #F4EBE8;
+    background-image: url("./sunrise.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+    list-style: none;
+
+}
+
+
+
+.goal-timeframe {
+    background-color: #C4C4C4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+label {
+    font-size: 1.8rem;
+    font-variant: all-petit-caps;
+} */

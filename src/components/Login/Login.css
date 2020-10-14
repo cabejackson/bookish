@@ -19,4 +19,41 @@ p {
 
 .login__form {
     background-color: #6e8f7d;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #6e8f7d;
+    background-image: url("../SignUp/bird_horizon.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+}
+
+.login___btn {
+    /* border-radius: 50px; */
+    border: solid #0A0908;
+    background-color: #387b45;
+    color: #0A0908;
+    font-family: 'Markazi Text',
+        serif;
+    font-size: 20px;
+    margin: auto;
+    align-content: left;
+
+}
+
+
+
+.login___btn a {
+    text-decoration: none;
+    color: #0A0908;
+
+
+}
+
+.login___btn:hover {
+    background-color: #81B8D9
 }

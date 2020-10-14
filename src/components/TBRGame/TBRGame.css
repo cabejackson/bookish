@@ -92,7 +92,8 @@ p {
 
 }
 
-.tbrGame__btn:hover {
+.tbrGame__btn:hover,
+.mySavedGoal__btn:hover {
     background-color: #81B8D9
 }
 

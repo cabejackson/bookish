@@ -57,7 +57,17 @@ export default class App extends Component {
 					onClick={this.handleLogoutClick}
 					to='/'>
 					LOGOUT
-        </Link>
+       			</Link>
+				<br />
+				<Link
+					to="/tbr-game">
+					CREATE
+				</Link>
+				<br />
+				<Link
+					to="/saved-goals">
+					MY GOALS
+				</Link>
 			</div>
 		)
 	}

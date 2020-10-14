@@ -57,7 +57,7 @@ export default function Login(props) {
     return (
         <ApiContext.Consumer>
             {context => {
-                return (<div>
+                return (<div className="login__form">
                     <form
                         className="login-form-submission"
                         onSubmit={(e) => {

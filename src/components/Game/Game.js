@@ -1,16 +1,13 @@
 import React, { useState } from "react";
+import CardPrompts from "../../utils/cardPrompts";
 import Card from "./Card/Card";
 import "./Game.css";
 
 const Game = () => {
 
 	//move this to an array of images instead of just text
-	const Cards = ["Prompt_1", "Prompt_2", "Prompt_3", "Prompt_4", "Prompt_5", "Prompt_6"].sort(
-		() => 0.5 - Math.random()
-	);
-
-
 	const [Num, setNum] = useState("");
+	const Cards = [...CardPrompts];
 
 	if (Cards.length > Num) {
 		if (Num < 0) Cards.length = 0;
@@ -22,8 +19,9 @@ const Game = () => {
 			<h2>TBR Card Generator:</h2>
 			<p>Add the number of TBR cards you'd like to view.
 				<br /> Then click on the cards to reveal their prompts
-				<br />Feel free to use these prompts
-				to help you think of reading goals</p>
+				<br />Feel free to use these prompts to help you
+				<br />
+				 think of reading goals</p>
 
 			<div>
 				Show me
@@ -52,13 +50,18 @@ const Game = () => {
                     <Card key={key} />
                 ))} */}
 
-				{Cards.map((card, key) => (
-					<Card cardId={card} key={key} />
+				{Cards.map((Image, key) => (
+					<Card Image={Image} key={key} />
 				))}
 			</div>
 
 			{Num > Cards.length && (
-				<p>I have got only {Cards.length} cards, so showing everything.</p>
+				<p>
+					I only have {Cards.length} reading prompts so far.
+					<br />
+					Check back later for more!
+				</p>
+
 			)}
 
 

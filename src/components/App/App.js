@@ -24,10 +24,10 @@ export default class App extends Component {
 		user_name: "",
 		email: "",
 		password: "",
-		tbr_number: null,
+		tbr_number: 2,
 		// isSelected: false,
 		reading_goals: "",
-		timeframe: "",
+		timeframe: "October",
 		userId: "data.userId",
 		handleLogoutClick: false
 	}

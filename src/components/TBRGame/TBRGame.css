@@ -14,5 +14,128 @@ h1,
 h2,
 h3,
 p {
-    color: black
+    color: darkgreen
 }
+
+.game-form-submission {
+    margin: 0 auto;
+    /* padding: 0 0px; */
+    width: 100%;
+
+}
+
+.tbr-game-form {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%;
+    background-color: #F4EBE8;
+    background-image: url("./yellow-book.jpg");
+    /* background-size: cover; */
+    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-repeat: no-repeat; */
+    background-position: bottom;
+    background-attachment: scroll;
+
+}
+
+.timeframe__textarea {
+    margin: 10px 20px -5px 5px;
+    /* background-color: transparent; */
+    border: 0 solid #333;
+    border-bottom-width: 5px;
+    border-bottom-color: #0A0908;
+    background-color: transparent;
+}
+
+.tbr_number__input {
+    margin: 10px 20px 0px 5px;
+    width: 40px;
+    border: 0 solid #333;
+    border-bottom-width: 5px;
+    border-bottom-color: #0A0908;
+    background-color: transparent;
+
+}
+
+.top__form h3 {
+    color: #0A0908;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 100%
+}
+
+.error {
+    color: #0A0908;
+    padding: 10px;
+}
+
+.tbrGame__btn,
+.mySavedGoal__btn {
+    padding: 10px 16px;
+    /* border-radius: 50px; */
+    border: solid #0A0908;
+    background-color: #387b45;
+    color: #0A0908;
+    font-family: 'Markazi Text',
+        serif;
+    font-size: 20px;
+    margin: auto;
+    align-content: left;
+
+}
+
+.mySavedGoal__btn a {
+    text-decoration: none;
+    color: #0A0908;
+
+
+}
+
+.tbrGame__btn:hover {
+    background-color: #81B8D9
+}
+
+
+.Button {
+    order: 1px solid #aaa;
+    background-color: #eee;
+    font-size: 1.1em;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.NavButton__onTbrGame {
+    /* padding: 0px 0px 110px 0px; */
+}
+
+.myReadingGoalsSubtitle {
+    text-align: left;
+    color: #0A0908;
+
+}
+
+.planToRead {
+    text-decoration: underline double;
+    text-align: left;
+    list-style: none;
+}
+
+.readingGoalsTextarea {
+
+    /* align-content: space-around; */
+    text-align: center;
+    align-content: center;
+    padding: 8px 12px;
+    display: block;
+    border: 1px solid #387b45;
+
+
+
+}
+
+/* .dynamicTbrNumber {
+    border-bottom-color: red;
+
+} */

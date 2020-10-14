@@ -16,3 +16,7 @@ h3,
 p {
     color: black
 }
+
+.login__form {
+    background-color: #6e8f7d;
+}

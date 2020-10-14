@@ -30,7 +30,7 @@ export default function SignUp(props) {
     return (
         <ApiContext.Consumer>
             {context => {
-                return (<div>
+                return (<div className="signup__form">
                     <form
                         className="signup-form-submission"
                         onSubmit={(e) => {

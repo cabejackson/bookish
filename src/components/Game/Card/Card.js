@@ -5,7 +5,7 @@ import BackImage from "../../../utils/photos/card_backside_1.png";
 const Card = ({ Image }) => {
     const [state, setState] = useState(false);
     return (
-        <img
+        <img className="cards"
             src={
                 state
                     ? Image

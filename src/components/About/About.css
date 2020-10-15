@@ -32,6 +32,7 @@ p {
 }
 
 .content-img-background-about {
+    background-color: #6e8f7d;
     background-image: url("./about.jpg");
     height: 1000px;
     width: auto;

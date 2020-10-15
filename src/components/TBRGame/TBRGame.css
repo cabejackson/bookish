@@ -1,20 +1,23 @@
-body {
+/* body {
     background-color: lightgrey;
     margin: 0px;
-    /* text-align: left; */
 }
 
 Header {
     background-color: darkgray;
     margin: 0px;
-    /* text-align: left; */
-}
+} */
 
 h1,
 h2,
 h3,
 p {
     color: darkgreen
+}
+
+.body___divForEntirePage {
+    font-family: sans-serif;
+    margin: 0;
 }
 
 .game-form-submission {
@@ -67,7 +70,9 @@ p {
 
 .error {
     color: #0A0908;
-    padding: 10px;
+    background-color: blanchedalmond;
+    /* padding: 0px; */
+    margin: 10px 75px 20px 0;
 }
 
 .tbrGame__btn,
@@ -135,8 +140,3 @@ p {
 
 
 }
-
-/* .dynamicTbrNumber {
-    border-bottom-color: red;
-
-} */

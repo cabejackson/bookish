@@ -98,7 +98,7 @@ export default class Login extends Component {
 
                                 }}
                             >
-                                <h2>Login to your account below!</h2>
+                                <h2 className="loginText">Login to your account below!</h2>
                                 {/* perhaps in the future we'll login using email instead of username */}
                                 {/* <label htmlFor='email'>Email:</label><br />
                 <input name='email' type='email' required /><br /> */}

@@ -10,7 +10,28 @@
     border: 1px solid #C4C4C4;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    /* flex-direction: column;  */
+    margin: 10px;
+    max-width: 65%;
+
+}
+
+.listItem span {
+    border: 1px solid #C4C4C4;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column;  */
+    margin: 0px 50px 20px 10px;
+    max-width: 65%;
+}
+
+.mainBox-about {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 65%;
 }
 
 .deleteGoal__btn {
@@ -61,6 +82,44 @@
 .Goal__timeframe a:hover {
     color: #FFB72F;
 }
+
+
+@media all and (min-width: 800px) {
+    /* body {
+        max-width: 800px;
+    } */
+
+    button.Goal__li {
+        width: 225px;
+        min-width: 0px;
+    }
+
+    button.listItem {
+        width: 225px;
+        min-width: 0px;
+    }
+
+
+
+    /* 
+    .flex-direction {
+        flex-direction: row;
+    }
+
+    .flex-desktop {
+        width: 50%;
+    }
+
+    .flex-desc {
+        flex: 4;
+    } */
+}
+
+
+
+
+
+
 
 /* .Note__dates {
     bottom: 8px;

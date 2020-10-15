@@ -11,10 +11,13 @@ Header {
 }
 
 h1,
-h2,
 h3,
 p {
     color: black
+}
+
+.loginText {
+    color: whitesmoke
 }
 
 .login__form {
@@ -30,6 +33,7 @@ p {
     background-repeat: no-repeat; */
     background-position: bottom;
     background-attachment: scroll;
+    color: whitesmoke
 }
 
 .login___btn {

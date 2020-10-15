@@ -1,13 +1,13 @@
-body {
+/* body {
     background-color: lightgrey;
     margin: 0px;
-    /* text-align: left; */
 }
 
-/* Header {
+Header {
     background-color: darkgray;
     margin: 0px;
 } */
+
 .header {
     padding: 15px;
     padding-left: 60px;
@@ -50,7 +50,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #FFD700;
+    background-color: #387b45;
 }
 
 .logo img {

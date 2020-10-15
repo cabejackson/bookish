@@ -1,8 +1,7 @@
-body {
+/* body {
     background-color: lightgrey;
     margin: 0px;
-    /* text-align: left; */
-}
+} */
 
 /* Header {
     background-color: darkgray;
@@ -19,8 +18,105 @@ p {
     color: Black
 }
 
+.body___divForEntirePage {
+    font-family: sans-serif;
+    margin: 0;
+}
 
 
+.mainBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-img-background {
+    background-image: url("./landing_look.jpg");
+    height: 1000px;
+    width: auto;
+    background-size: cover;
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+}
+
+.deleteSoon {
+    bottom: 0;
+}
+
+.cutesyLine {
+    width: 75px;
+    height: 3px;
+    background: #ffe680;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.catchyPhrase {
+    font-family: "open sans", "sans serif";
+    font-size: 15pt;
+    color: white;
+    font-style: italic;
+}
+
+.boarderLine {
+    display: inline-block;
+    text-align: center;
+    padding: 9px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-family: "open sans", "sans-serif";
+    font-size: 16px;
+    width: 300px;
+    border: 5px solid #ffe680;
+    border-radius: 7px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.titleText {
+    font-family: "open sans", "sans serif";
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+}
+
+.about___btn {
+    width: 145px;
+    height: 35px;
+    background: #ffe680;
+    text-align: center;
+    display: inline-block;
+    font-family: "open sans";
+    color: black;
+    font-weight: bold;
+    /* padding-top: 10px; */
+    /* margin-top: 20px; */
+    margin-bottom: -20px;
+    z-index: 1000;
+    position: relative;
+}
+
+.about___btn a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+.about___btn:hover {
+    border: 1px solid white;
+}
+
+/* .about___btn {
+    width: 100%;
+    text-align: center;
+    margin-top: -25px;
+    z-index: 1000;
+    position: relative;
+} */
 
 /* * {
   margin:0;

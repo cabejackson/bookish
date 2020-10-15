@@ -61,8 +61,10 @@ export default function TBRGame(props) {
     <ApiContext.Consumer>
       {context => {
         return (
-          <div className="tbr-game-form">
-            {/* <!-- start of TBR Game Page -->
+          <div className="body___divForEntirePage">
+
+            <div className="tbr-game-form">
+              {/* <!-- start of TBR Game Page -->
 
         <!-- header would go at the top of this page too, -->
         <!-- IF RETURNING USER: -->
@@ -74,97 +76,97 @@ export default function TBRGame(props) {
 
         <!-- backside-of-card would eventually need to be 12 unique cards --> */}
 
-            <form
-              className="game-form-submission"
-              onSubmit={(e) => {
-                e.preventDefault();
-                console.log("the GAME form has been submitted");
-                console.log(context.tbr_number, context.timeframe, context.reading_goals)
-                handleGameSubmission(
-                  context.tbr_number,
-                  context.timeframe,
-                  context.reading_goals,
-                )
-              }}
-            ><div className="top__form">
-                <h3>
-                  I would like to read
+              <form
+                className="game-form-submission"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  console.log("the GAME form has been submitted");
+                  console.log(context.tbr_number, context.timeframe, context.reading_goals)
+                  handleGameSubmission(
+                    context.tbr_number,
+                    context.timeframe,
+                    context.reading_goals,
+                  )
+                }}
+              ><div className="top__form">
+                  <h3>
+                    I would like to read
           <label htmlFor="tbr_number">
-                    <input
-                      type="text"
-                      id="tbr_number"
-                      className="tbr_number__input"
-                      name="tbr_number"
-                      value={context.tbr_number || ""}
-                      placeholder="e.g. 5"
-                      onChange={(e) => context.handleInputChange(e)}
-                      required
-                    />
-                  </label>
+                      <input
+                        type="text"
+                        id="tbr_number"
+                        className="tbr_number__input"
+                        name="tbr_number"
+                        value={context.tbr_number || ""}
+                        placeholder="e.g. 5"
+                        onChange={(e) => context.handleInputChange(e)}
+                        required
+                      />
+                    </label>
 
-                  <br />
+                    <br />
 
           throughout
 
                 <label htmlFor="timeframe">
+                      <textarea
+                        cols="28"
+                        rows="1"
+                        className="timeframe__textarea"
+                        type="text"
+                        id="timeframe"
+                        name="timeframe"
+                        value={context.timeframe || ""}
+                        placeholder="e.g. October or spring break"
+                        onChange={(e) => context.handleInputChange(e)}
+                        required
+                      />
+                    </label>
+
+
+
+
+
+
+
+
+
+                  </h3>
+                </div>
+                <ValidationError message={validateTbrNumber(context.tbr_number)} />
+
+
+                <div><Game /></div>
+
+
+
+                <>
+                  <h2 className="myReadingGoalsSubtitle">My Reading Goals</h2>
+
+                  <h3><li className="planToRead">I plan to read <code className="dynamicTbrNumber">{context.tbr_number}</code><br />
+                 books during <code>{context.timeframe}</code>!</li></h3>
+                  <label htmlFor="reading_goals">
                     <textarea
-                      cols="28"
-                      rows="1"
-                      className="timeframe__textarea"
+                      cols="40"
+                      rows="10"
                       type="text"
-                      id="timeframe"
-                      name="timeframe"
-                      value={context.timeframe || ""}
-                      placeholder="e.g. October or spring break"
+                      className="readingGoalsTextarea"
+                      id="reading_goals"
+                      name="reading_goals"
+                      value={context.reading_goals || ""}
+                      placeholder="e.g.
+                    This month I plan to read an anthology by Latinx authors"
                       onChange={(e) => context.handleInputChange(e)}
                       required
                     />
                   </label>
-
-
-
-
-
-
-
-
-
-                </h3>
-              </div>
-              <ValidationError message={validateTbrNumber(context.tbr_number)} />
-
-
-              <div><Game /></div>
-
-
-
-              <>
-                <h2 className="myReadingGoalsSubtitle">My Reading Goals</h2>
-
-                <h3><li className="planToRead">I plan to read <code className="dynamicTbrNumber">{context.tbr_number}</code><br />
-                 books during <code>{context.timeframe}</code>!</li></h3>
-                <label htmlFor="reading_goals">
-                  <textarea
-                    cols="40"
-                    rows="10"
-                    type="text"
-                    className="readingGoalsTextarea"
-                    id="reading_goals"
-                    name="reading_goals"
-                    value={context.reading_goals || ""}
-                    placeholder="e.g.
-                    This month I plan to read an anthology by Latinx authors"
-                    onChange={(e) => context.handleInputChange(e)}
-                    required
-                  />
-                </label>
-                <br />
-                <button type="submit" className="tbrGame__btn" id="button-for-saving-goals">
-                  SAVE THIS GOAL
+                  <br />
+                  <button type="submit" className="tbrGame__btn" id="button-for-saving-goals">
+                    SAVE THIS GOAL
         </button>
 
 
-              </>
+                </>
 
 
 
@@ -177,33 +179,36 @@ export default function TBRGame(props) {
 
 
 
-            </form>
-            <div className="NavButton__onTbrGame">
-              <button className="mySavedGoal__btn"> <NavButton
-                tag={Link}
-                to="/saved-goals"
-                type="button"
-                className="NavButton__to-saved-goals-button"
-              >
-                MY SAVED GOALS
+              </form>
+              <div className="NavButton__onTbrGame">
+                <button className="mySavedGoal__btn"> <NavButton
+                  tag={Link}
+                  to="/saved-goals"
+                  type="button"
+                  className="NavButton__to-saved-goals-button"
+                >
+                  MY SAVED GOALS
       </NavButton>
-              </button>
+                </button>
+              </div>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+
+
             </div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+          </div>
 
-
-          </div>)
+        )
       }}
     </ApiContext.Consumer>
 

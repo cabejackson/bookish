@@ -1,14 +1,12 @@
-body {
+/* body {
     background-color: lightgrey;
     margin: 0px;
-    /* text-align: left; */
 }
 
 Header {
     background-color: darkgray;
     margin: 0px;
-    /* text-align: left; */
-}
+} */
 
 h1,
 h2,
@@ -76,6 +74,31 @@ h3 {
     background-color: #C4C4C4;
     margin: 0;
     padding: 0;
+}
+
+
+@media all and (min-width: 800px) {
+    body {
+        /* max-width: 800px; */
+    }
+
+    button.Goal__li {
+        width: 225px;
+        min-width: 0px;
+    }
+
+    /* 
+    .flex-direction {
+        flex-direction: row;
+    }
+
+    .flex-desktop {
+        width: 50%;
+    }
+
+    .flex-desc {
+        flex: 4;
+    } */
 }
 
 

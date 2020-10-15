@@ -86,7 +86,7 @@ export default class App extends Component {
 				<br />
 				<Link
 					to="/saved-goals">
-					MY GOALS
+					GOALS
 				</Link>
 			</div>
 		)

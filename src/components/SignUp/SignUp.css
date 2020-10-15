@@ -1,20 +1,29 @@
-body {
+/* body {
     background-color: lightgrey;
     margin: 0px;
-    /* text-align: left; */
 }
 
 Header {
     background-color: darkgray;
     margin: 0px;
-    /* text-align: left; */
-}
+} */
 
 h1,
 h2,
-h3,
-p {
+h3 {
     color: black
+}
+
+.signUp__h2,
+p {
+    color: whitesmoke
+}
+
+
+
+.body___divForEntirePage {
+    font-family: sans-serif;
+    margin: 0;
 }
 
 .signup__form {
@@ -34,8 +43,9 @@ p {
 
 .inputs___form {
     margin: 10px 20px 0px 5px;
-    /* width: 60px; */
-    /* border: 0 solid #333;
+    color: whitesmoke
+        /* width: 60px; */
+        /* border: 0 solid #333;
     border-bottom-width: 5px;
     border-bottom-color: #0A0908;
     background-color: transparent; */

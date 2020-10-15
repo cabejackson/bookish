@@ -14,27 +14,21 @@ const Header = () => {
 			{context => {
 				return (
 					<>
-						<header>
+						<header className="header">
 							<nav>
-								<h1>Welcome to Bowties & Books!</h1>
+								<h1 className="welcome">Welcome to Bowties  <br /> & Books!</h1>
 
-								<ul id="menu">
-									{/* <!-- links in nav would route to dif pages --> */}
+								<ul className="navBar__ul">
 									<li>
 										<Link to="/" > START HERE </Link>
 									</li>
-									{/* <li>
-                            <Link to="/login" > LOGIN </Link>
-                        </li>
-                                    <li>
-                                        <Link to="/sign-up" > SIGN-UP </Link>
-                                    </li> */}
+
 									<li>
 										<Link to="/about" > ABOUT </Link>
 									</li>
 									<li>
 										{
-											TokenService.hasAuthToken()
+											context.isLoggedIn
 												? context.renderLogoutLink()
 												: context.renderLoginLink()
 										}

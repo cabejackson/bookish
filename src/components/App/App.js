@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, Redirect } from "react-router-dom";
 import ApiContext from "../../context/ApiContext";
 import TokenService from '../../services/token-services'
 import config from "../../config";
@@ -12,6 +12,7 @@ import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
 import About from "../About/About";
 import Home from "../Home/Home";
+
 // import UpdateGoalForm from "../SavedGoals/updateGoalForm/UpdateGoalForm";
 
 export default class App extends Component {
@@ -29,7 +30,9 @@ export default class App extends Component {
 		reading_goals: "",
 		timeframe: "October",
 		userId: "data.userId",
-		handleLogoutClick: false
+		handleLogoutClick: false,
+		isLoggedIn: TokenService.hasAuthToken()
+
 	}
 	//  Hnadles form input changes
 	//Here's a DRY method of doing things,
@@ -45,9 +48,26 @@ export default class App extends Component {
 
 
 	handleLogoutClick = () => {
-		// this.setState(
+		console.log("handle log out ran")
 		TokenService.clearAuthToken()
-		// )
+
+		this.setState({
+			isLoggedIn: false
+		})
+		// this.setState({
+		// 	displaysLogoutLink: true
+		// })
+
+	}
+	handleLoginClick = () => {
+		console.log("handle login click ran")
+		// TokenService.hasAuthToken() 
+		// why send this to header? 
+		// -- bc that's whre the links are maybe?
+		this.setState({
+			isLoggedIn: true
+		})
+
 	}
 
 	renderLogoutLink() {
@@ -179,11 +199,15 @@ export default class App extends Component {
 			renderLogoutLink: this.renderLogoutLink,
 			renderLoginLink: this.renderLoginLink,
 			handleLogoutClick: this.handleLogoutClick,
+			handleLoginClick: this.handleLoginClick,
 			userId: this.userId,
-			getUserGoals: this.getUserGoals
+			getUserGoals: this.getUserGoals,
+			isLoggedIn: this.state.isLoggedIn
 
 
 		}
+
+		// console.log(this.state.isLoggedIn)
 		// console.log('test', this.state.prompts);
 		return (
 			<ErrorBoundary>

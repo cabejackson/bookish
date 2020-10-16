@@ -5,10 +5,15 @@ It also encourages users to "broaden their perspective" and read diversely by pr
 
 Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://bookish-client.vercel.app/ "Bowties-and-Books")
 
-### Demo Account:
+### Demo Accounts:
 
 - username: Drake
 - password: Foobar!123
+
+OR
+
+- username: MagicSchoolBus
+- password: Boobaz!123
 
 ## Table of Contents
 

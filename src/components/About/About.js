@@ -56,7 +56,13 @@ export default function About(props) {
                                         <div className="cutesyLine-about"></div>
                                         <h3 className="catchyPhrase-about">Sign up for an account.
                                         Then create a reading goal. While creating a goal, you can view
-                                        some reading prompts (the TBR cards) to help you plan your goals</h3>
+                                        some reading prompts (the TBR cards) to help you plan your goals
+                                        <br />
+                                            <br />
+                                        Use these Login Credentials for the Demo User:
+                                        username -- Drake
+                                        password -- Foobar!123
+                                        </h3>
                                         {/* <h2>Click the Links above to Sign Up or Login to get started!</h2>
                         <p>Here's a brief summary of the app,
                     <br />

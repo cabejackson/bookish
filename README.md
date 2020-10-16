@@ -49,7 +49,7 @@ Then on Thursday, the user says "show me 2 TBR cards" again different cards will
 
 ![giphy](https://media.giphy.com/media/AUJnEt2yVTnyfViugs/giphy.gif)
 
-## A More Detailed Look
+## A More Detailed Look -psst I'm still working on these
 
 ### These links show screenshots of my app with the components they're referencing labeled as well.
 

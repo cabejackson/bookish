@@ -10,13 +10,13 @@ Here's the deployed version of `Bowties & Books`: (https://bookish-client.vercel
 - username: wildseed
 - password: Password!123
 
-## Table of Contents
+<!-- ## Table of Contents
 
 - [Demo Account](#Demo-Account)
 - [Storytime!](#Storytime!)
 - [Quick App Demo](Quick-App-Demo)
 - [A More Detailed Look](A-More-Detailed-Look)
-- [Tech Stack:](#Tech-Stack:)
+- [Tech Stack](#Tech-Stack)
   - [Front End](#Front-End)
   - [Testing](#Testing)
   - [Production](#Production)
@@ -26,7 +26,7 @@ Here's the deployed version of `Bowties & Books`: (https://bookish-client.vercel
 - [About Me](#About-Me)
   - [GitHub Profile](https://github.com/cabejackson)
   - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
-- [Special Thanks](#Special-Thanks)
+- [Special Thanks](#Special-Thanks) -->
 
 ## Storytime!
 
@@ -59,7 +59,7 @@ Then on Thursday, the user says "show me 2 TBR cards" again different cards will
 - [CREATE](some-site)
 - [GOALS](some-site)
 
-## Tech Stack:
+## Tech Stack
 
 ### Front End
 
@@ -105,7 +105,7 @@ npm install
 
 Follow the [setup](https://github.com/cabejackson/bookish-backend) instructions to get `Bowties & Books Server` up and running.
 
-## quick start scripts.
+## Scripts to get started
 
 Run the tests
 

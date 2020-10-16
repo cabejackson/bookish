@@ -21,7 +21,7 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
   - [Testing](#Testing)
   - [Production](#Production)
 - [Getting Started](#Getting-Started)
-  - [Local Setup](#Local-Setup)
+  - [Server Setup](#Server-Setup)
 - [Upcoming Features](#Upcoming-Features)
 - [About Me](#About-Me)
   - [GitHub Profile](https://github.com/cabejackson)
@@ -106,7 +106,7 @@ Install the node dependencies
 npm install
 ```
 
-### Local Setup
+### Server Setup
 
 Follow the [setup](https://github.com/cabejackson/bookish-backend) instructions to get `Bowties & Books Server` up and running.
 

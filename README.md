@@ -106,7 +106,8 @@ Install the node dependencies
 npm install
 ```
 
-##local setup
+### local setup
+
 Follow the [setup](https://github.com/cabejackson/bookish-backend) instructions to get `Bowties & Books Server` up and running.
 
 ## Scripts to get started

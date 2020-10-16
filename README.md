@@ -121,7 +121,7 @@ npm start
 
 ## Upcoming Features!
 
-### The Developer described in the [About Me](#About-Me) is working to incorporate these next user stories!
+### I'm working to incorporate these next user stories!
 
 - Returning users can edit their goals
 - Users can view developer recommended books when viewing prompts

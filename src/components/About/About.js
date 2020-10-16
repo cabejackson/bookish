@@ -25,7 +25,7 @@ export default function About(props) {
                                             <h2>WHY SHOULD YOU <br /> USE THIS APP</h2>
                                         </div>
                                         <div className="cutesyLine-about"></div>
-                                        <h3 className="catchyPhrase-about">TO TRACK<br /> YOUR <br /> READING GOALS <br /><br /> & GET INTERESTING <br /> READING PROMPTS</h3>
+                                        <h3 className="catchyPhrase-about">TO SET<br /> YOUR <br /> READING GOALS <br /><br /> & GET INTERESTING <br /> READING PROMPTS</h3>
                                         {/* <h2>Click the Links above to Sign Up or Login to get started!</h2>
                         <p>Here's a brief summary of the app,
                     <br />

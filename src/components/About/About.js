@@ -60,7 +60,9 @@ export default function About(props) {
                                         <br />
                                             <br />
                                         Use these Login Credentials for the Demo User:
+                                        <br />
                                         username -- Drake
+                                        <br />
                                         password -- Foobar!123
                                         </h3>
                                         {/* <h2>Click the Links above to Sign Up or Login to get started!</h2>

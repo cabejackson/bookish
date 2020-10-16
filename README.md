@@ -41,6 +41,7 @@ Will the user be repeatedly shown the same TBR cards? No way, lol that's no fun!
 
 For example if the user says "show me 2 TBR cards on Wednesday" like this:
 [Wednesday](https://imgur.com/a/gct0JEY)
+
 Then on Thursday, the user says "show me 2 TBR cards" again different cards will be shown, like this:
 [Thursday](https://imgur.com/a/nVWjIKN)
 
@@ -48,15 +49,18 @@ Then on Thursday, the user says "show me 2 TBR cards" again different cards will
 
 ![giphy](https://media.giphy.com/media/AUJnEt2yVTnyfViugs/giphy.gif)
 
-## A More Detailed Look -psst I'm still working on these
+## A More Detailed Look
 
 ### These links show screenshots of my app with the components they're referencing labeled as well.
 
-- [START HERE](some-site)
-- [ABOUT](some-site)
-- [LOGIN](some-site)
-- [CREATE](some-site)
-- [GOALS](some-site)
+Note: component names are listed in the green boxes
+
+- [START HERE](https://imgur.com/a/BWxNwNw)
+- [ABOUT](https://imgur.com/a/I0Ag4tv)
+- [SIGN UP](https://imgur.com/a/k8Repzt)
+- [LOGIN](https://imgur.com/a/MHjs696)
+- [CREATE](https://imgur.com/a/NoXozEx)
+- [GOAL](https://imgur.com/a/Foui1Vd)
 
 ## Tech Stack
 

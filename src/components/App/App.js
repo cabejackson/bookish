@@ -61,7 +61,7 @@ export default class App extends Component {
 	}
 	handleLoginClick = () => {
 		console.log("handle login click ran")
-		// TokenService.hasAuthToken() 
+		TokenService.saveAuthToken()
 		// why send this to header? 
 		// -- bc that's whre the links are maybe?
 		this.setState({

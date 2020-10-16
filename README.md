@@ -1,68 +1,136 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bowties & Books Client
 
-## Available Scripts
+This app allows users to set reading goals.
+It also encourages users to "broaden their perspective" and read diversely by providing interesting reading prompts.
 
-In the project directory, you can run:
+Here's the deployed version of `Bowties & Books`: (https://bookish-client.vercel.app/ "Bowties-and-Books"
 
-### `npm start`
+### Demo Account:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- username: wildseed
+- password: Password!123
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Demo Account](#Demo-Account)
+- [Storytime!](#Storytime!)
+- [Quick App Demo](Quick-App-Demo)
+- [A More Detailed Look](A-More-Detailed-Look)
+- [Tech Stack:](#Tech-Stack:)
+  - [Front End](#Front-End)
+  - [Testing](#Testing)
+  - [Production](#Production)
+- [Getting Started!](#Getting-Started!)
+  - [local setup](#local-setup)
+- [Upcoming Features!](#Upcoming-Features!)
+- [About Me](#About-Me)
+  - [GitHub Profile](https://github.com/cabejackson)
+  - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
+- [Special Thanks](#Special-Thanks)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Storytime!
 
-### `npm run build`
+As an avid reader myself, I'm always looking for my next great read! This app can help users do just that, by challenging their reading tastes and prompting them to read books they might've otherwise never considered.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This app will prompt the user to declare how many books they plan to read in the month (or any time frame, like spring break for example). Now, let's say they chose 4 books! The user will then view TBR cards and click on the cards to reveal the prompts on the backside. These prompts could be like, "Read a book with an elder protagonist" or "Read an anthology". Again, these prompts encourage readers to read outside of their comfort zones, but if the user feels like, "oh I already read a ton of anthology books", then they can flip that card back over and click another one! After viewing these prompts, users can then jot down their reading goals and click "Save This Goal".
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Saving their goals is advantageous, because it allows users to keep track of prompts they've already completed. Note: saving goals is only available for users that have created an account.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Fun tidbit:
+Will the user be repeatedly shown the same TBR cards? No way, lol that's no fun! Each time the user logs in and navigates to the "Create" page, the TBR cards are randomly generator to ensure the same cards aren't shown.
 
-### `npm run eject`
+For example if the user says "show me 2 TBR cards on Wednesday" like this:
+[Wednesday](some-site)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Then on Thursday, the user says "show me 2 TBR cards" again different cards will be shown, like this:
+[Thursday](some-site)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Quick App Demo
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![giphy](<iframe src="https://giphy.com/embed/AUJnEt2yVTnyfViugs" width="342" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/AUJnEt2yVTnyfViugs">via GIPHY</a></p>)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## A More Detailed Look
 
-## Learn More
+### These links show screenshots of my app with the components they're referencing labeled as well.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [START HERE](some-site)
+- [ABOUT](some-site)
+- [LOGIN](some-site)
+- [CREATE](some-site)
+- [GOALS](some-site)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Tech Stack:
 
-### Code Splitting
+### Front End
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+- React
+  - Create React App
+  - React Router
+- HTML5
+- CSS3
 
-### Analyzing the Bundle Size
+### Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+- Jest (Smoke tests)
 
-### Making a Progressive Web App
+### Production
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- Deployed via Vercel
 
-### Advanced Configuration
+## Getting Started!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+Clone this repository to your local machine
 
-### Deployment
+```
+git clone https://github.com/cabejackson/bookish.git bnb-client
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+Change directory into the cloned repository
 
-### `npm run build` fails to minify
+```
+cd bnb-client
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Make a fresh start of the git history for this project
+
+```
+rm -rf .git && git init
+```
+
+Install the node dependencies
+
+```
+npm install
+```
+
+Follow the [setup](https://github.com/cabejackson/bookish-backend) instructions to get `Bowties & Books Server` up and running.
+
+## quick start scripts.
+
+Run the tests
+
+```
+npm t
+```
+
+Start the application
+
+```
+npm start
+```
+
+## Upcoming Features!
+
+### The Developer described in the [About Me](#About-Me) is working to incorporate these next user stories!
+
+- Returning users can edit their goals
+- Users can view developer recommended books when viewing prompts
+
+## About Me
+
+_[GitHub Profile](https://github.com/cabejackson)
+_[LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
+
+## Special Thanks
+
+To Thinkful's Engineering Immersion Course TAs, instructors and my mentor (Praveen)!

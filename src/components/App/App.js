@@ -49,7 +49,8 @@ export default class App extends Component {
 
 	handleLogoutClick = () => {
 		console.log("handle log out ran")
-		TokenService.clearAuthToken()
+		// TokenService.clearAuthToken()
+		TokenService.clearCredentialsn()
 
 		this.setState({
 			isLoggedIn: false

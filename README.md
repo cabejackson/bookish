@@ -3,7 +3,7 @@
 This app allows users to set reading goals.
 It also encourages users to "broaden their perspective" and read diversely by providing interesting reading prompts.
 
-Here's the deployed version of `Bowties & Books`: (https://bookish-client.vercel.app/ "Bowties-and-Books"
+Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://bookish-client.vercel.app/ "Bowties-and-Books")
 
 ### Demo Account:
 

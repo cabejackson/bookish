@@ -47,7 +47,7 @@ Then on Thursday, the user says "show me 2 TBR cards" again different cards will
 
 ## Quick App Demo
 
-![giphy](<iframe src="https://giphy.com/embed/AUJnEt2yVTnyfViugs" width="342" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/AUJnEt2yVTnyfViugs">via GIPHY</a></p>)
+![giphy](https://media.giphy.com/media/AUJnEt2yVTnyfViugs/giphy.gif)
 
 ## A More Detailed Look
 

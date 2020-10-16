@@ -13,7 +13,7 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
 ## Table of Contents
 
 - [Demo Account](#Demo-Account)
-- [Storytime!](#Storytime!)
+- [Storytime](#Storytime)
 - [Quick App Demo](#Quick-App-Demo)
 - [A More Detailed Look](#A-More-Detailed-Look)
 - [Tech Stack](#Tech-Stack)
@@ -28,7 +28,7 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
   - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
 - [Special Thanks](#Special-Thanks)
 
-## Storytime!
+## Storytime
 
 As an avid reader myself, I'm always looking for my next great read! This app can help users do just that, by challenging their reading tastes and prompting them to read books they might've otherwise never considered.
 
@@ -106,6 +106,7 @@ Install the node dependencies
 npm install
 ```
 
+##local setup
 Follow the [setup](https://github.com/cabejackson/bookish-backend) instructions to get `Bowties & Books Server` up and running.
 
 ## Scripts to get started

@@ -59,7 +59,9 @@ export default function About(props) {
                                         some reading prompts (the TBR cards) to help you plan your goals
                                         <br />
                                             <br />
-                                        Use these Login Credentials for the Demo User:
+                                        Use these Login Credentials
+                                        <br />
+                                        for the Demo User:
                                         <br />
                                         username -- Drake
                                         <br />

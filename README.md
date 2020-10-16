@@ -7,8 +7,8 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
 
 ### Demo Account:
 
-- username: wildseed
-- password: Password!123
+- username: Drake
+- password: Foobar!123
 
 ## Table of Contents
 

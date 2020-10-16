@@ -10,7 +10,7 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
 - username: wildseed
 - password: Password!123
 
-<!-- ## Table of Contents
+## Table of Contents
 
 - [Demo Account](#Demo-Account)
 - [Storytime!](#Storytime!)
@@ -26,7 +26,7 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
 - [About Me](#About-Me)
   - [GitHub Profile](https://github.com/cabejackson)
   - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
-- [Special Thanks](#Special-Thanks) -->
+- [Special Thanks](#Special-Thanks)
 
 ## Storytime!
 
@@ -124,7 +124,7 @@ npm start
 
 ## Upcoming Features!
 
-### I'm working to incorporate these next user stories!
+### I'm working dilligently to incorporate these next user stories!
 
 - Returning users can edit their goals
 - Users can view developer recommended books when viewing prompts

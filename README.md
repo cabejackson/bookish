@@ -14,8 +14,8 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
 
 - [Demo Account](#Demo-Account)
 - [Storytime!](#Storytime!)
-- [Quick App Demo](Quick-App-Demo)
-- [A More Detailed Look](A-More-Detailed-Look)
+- [Quick App Demo](#Quick-App-Demo)
+- [A More Detailed Look](#A-More-Detailed-Look)
 - [Tech Stack](#Tech-Stack)
   - [Front End](#Front-End)
   - [Testing](#Testing)
@@ -40,10 +40,9 @@ Fun tidbit:
 Will the user be repeatedly shown the same TBR cards? No way, lol that's no fun! Each time the user logs in and navigates to the "Create" page, the TBR cards are randomly generator to ensure the same cards aren't shown.
 
 For example if the user says "show me 2 TBR cards on Wednesday" like this:
-[Wednesday](some-site)
-
+[Wednesday](https://imgur.com/a/gct0JEY)
 Then on Thursday, the user says "show me 2 TBR cards" again different cards will be shown, like this:
-[Thursday](some-site)
+[Thursday](https://imgur.com/a/nVWjIKN)
 
 ## Quick App Demo
 

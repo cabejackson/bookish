@@ -20,9 +20,9 @@ Here's the deployed version of `Bowties & Books`: [Bowties & Books](https://book
   - [Front End](#Front-End)
   - [Testing](#Testing)
   - [Production](#Production)
-- [Getting Started!](#Getting-Started!)
+- [Getting Started](#Getting-Started)
   - [local setup](#local-setup)
-- [Upcoming Features!](#Upcoming-Features!)
+- [Upcoming Features](#Upcoming-Features)
 - [About Me](#About-Me)
   - [GitHub Profile](https://github.com/cabejackson)
   - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
@@ -80,7 +80,7 @@ Note: component names are listed in the green boxes
 
 - Deployed via Vercel
 
-## Getting Started!
+## Getting Started
 
 Clone this repository to your local machine
 
@@ -122,7 +122,7 @@ Start the application
 npm start
 ```
 
-## Upcoming Features!
+## Upcoming Features
 
 ### I'm working dilligently to incorporate these next user stories!
 

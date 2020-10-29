@@ -8,10 +8,13 @@ img {
 }
 
 .cards img {
+    display: flex;
+    flex-wrap: wrap;
     margin: 10px;
+    /* width: 150px;
+    height: auto; */
     max-width: 30%;
-    /* width: auto;
-    height: auto */
+
 }
 
 input {

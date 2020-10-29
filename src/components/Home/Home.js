@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import NavButton from "../NavButton/NavButton";
-
-//CHANGE LINK!!!!!!!!!
+//future implementation adding a home page for logged in users
 const Landing = () => {
     return (
         <>

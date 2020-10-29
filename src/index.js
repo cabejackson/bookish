@@ -13,4 +13,3 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// deleted this script "test": "react-scripts test",

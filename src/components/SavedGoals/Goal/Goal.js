@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import config from "../../../config";
-import TokenService from '../../../services/token-services'
+import TokenService from '../../../services/token-services';
 
 const Goal = ({ goal, handleDeleteGoal }) => {
 

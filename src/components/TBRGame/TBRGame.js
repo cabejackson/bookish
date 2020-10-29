@@ -5,7 +5,7 @@ import "./TBRGame.css";
 import NavButton from "../NavButton/NavButton";
 import { Link } from "react-router-dom";
 import config from "../../config";
-import TokenService from '../../services/token-services'
+import TokenService from '../../services/token-services';
 
 
 

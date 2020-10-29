@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Login.css";
-import TokenService from '../../services/token-services'
+import TokenService from '../../services/token-services';
 import ApiContext from "../../context/ApiContext";
 import config from "../../config";
 import { Redirect } from 'react-router-dom';

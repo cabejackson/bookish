@@ -2,7 +2,6 @@ import React from 'react';
 import "./SignUp.css";
 import ApiContext from "../../context/ApiContext";
 import config from "../../config";
-import ValidationError from "../../ValidationError";
 
 
 export default function SignUp(props) {

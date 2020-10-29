@@ -1,11 +1,8 @@
 import React, { Component, useState, useEffect } from 'react';
 import "./SavedGoals.css";
-import { Link } from "react-router-dom";
-import NavButton from "../NavButton/NavButton";
-import ApiContext from "../../context/ApiContext";
 import config from "../../config";
-import TokenService from '../../services/token-services'
-import Goal from "./Goal/Goal"
+import TokenService from '../../services/token-services';
+import Goal from "./Goal/Goal";
 
 
 

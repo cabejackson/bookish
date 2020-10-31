@@ -7,7 +7,7 @@ export default function NavButton(props) {
     return React.createElement(
         props.tag,
         {
-            className: ["NavButton", props.className].join,
+            className: ["NavButton", props.className].join(' '),
             ...otherProps
         },
         props.children
